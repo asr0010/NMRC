@@ -1,0 +1,278 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: aqua; 
+    color: #333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.logo {
+    width: 120px;
+    height: auto;
+}
+.heros{
+    width: 100%;
+}
+
+
+#navbar {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+
+#navbar li a {
+    text-decoration: none;
+    color: #333; 
+    font-size: 16px;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+
+#navbar li a.active,
+#navbar li a:hover {
+    color: #007bff; 
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 4px;
+}
+
+.para {
+    width: 100%;
+    overflow: hidden;
+    padding: 10px 20px;
+    background-color: #f0f8ff; 
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.15);
+    position: relative;
+    height: 60px;
+}
+
+.scroll-text {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scroll-loop 18s linear infinite;
+    font-size: 18px;
+    font-weight: 500;
+    color: #003366;
+}
+
+@keyframes scroll-loop {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+  #train-time { 
+    text-align: center;
+    margin-top: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    color: #000;
+    background-color: aqua;
+    padding: 15px;
+    border-radius: 8px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #train-time .fa-train {
+    margin-right: 8px;
+    color: #000;
+  }
+ 
+   .flex-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 50px;
+    flex-wrap: wrap; 
+    margin-left: 10px;
+  }
+
+  .recharge-container {
+    width: 300px;
+    background-color: #e0f7fa;
+    padding: 20px;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-left: 10px;
+  }
+
+  .recharge-container h2 {
+    margin-bottom: 20px;
+    color: #00796b;
+  }
+
+  .recharge-form label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-align: left;
+  }
+
+  .recharge-form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .recharge-form button {
+    background-color: #00796b;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .recharge-form button:hover {
+    background-color: #004d40;
+  }
+
+  .metro-footer {
+  background-color: #00796b;
+  color: white;
+  padding: 30px 20px 10px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 220px;
+  margin: 10px;
+}
+
+.footer-section h3,
+.footer-section h4 {
+  margin-bottom: 10px;
+}
+
+.footer-section p,
+.footer-section a {
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
+  line-height: 1.6;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 15px;
+  border-top: 1px solid rgba(255,255,255,0.2);
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f7fa;
+  margin: 0;
+  padding: 0;
+}
+
+
+#main {
+  flex: 1;
+  max-width: 800px;
+  margin: 40px auto;
+  margin-left: 10px;
+  background-color: #fefefe;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+
+ .tenders h1 {
+  font-size: 32px;
+  color: black;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+ .tenders h3 {
+  font-size: 22px;
+  color: black;
+  margin-top: 25px;
+}
+
+
+.update {
+  list-style-type: disc;
+  margin-left: 20px;
+  padding-left: 20px;
+}
+
+.update li {
+  font-size: 16px;
+  color: #444;
+  margin: 8px 0;
+}
+.container {
+  display: flex;
+  gap: 30px;
+  padding: 20px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+#main, #links {
+  flex: 1;
+  max-width: 800px;
+  margin: 20px;
+  background-color: whitesmoke;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
